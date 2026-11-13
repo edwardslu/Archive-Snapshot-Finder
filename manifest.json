@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Archive Snapshot Finder",
+  "version": "1.3.0",
+  "description": "Right-click to open the latest archive snapshot of the current page or a link.",
+  "permissions": [
+    "contextMenus",
+    "tabs",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://archive.is/*",
+    "https://archive.today/*",
+    "https://archive.ph/*",
+    "https://news.google.com/*",
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
